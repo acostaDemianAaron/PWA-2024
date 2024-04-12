@@ -14,3 +14,9 @@
   - Legajo FAI - 2592
   - Mail Personal: demian.acosta@est.fi.uncoma.edu.ar
   - Usuario GitHub: acostaDemianAaron
+  
+- **Alcaraz Julian Jorge**
+
+  - Legajo FAI - 4261
+  - Mail Personal: julian.alcaraz@est.fi.uncoma.edu.ar
+  - Usuario GitHub: Julian-Alcaraz
