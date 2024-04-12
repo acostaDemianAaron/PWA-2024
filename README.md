@@ -20,3 +20,9 @@
   - Legajo FAI - 4261
   - Mail Personal: julian.alcaraz@est.fi.uncoma.edu.ar
   - Usuario GitHub: Julian-Alcaraz
+
+- **Agüero Mendez Guillermo Andres**
+
+  - Legajo FAI - 3844
+  - Mail Personal: guillermo.aguero@est.fi.uncoma.edu.ar
+  - Usuario GitHub: guillermoagueronqn
