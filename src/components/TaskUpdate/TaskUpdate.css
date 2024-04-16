@@ -1,0 +1,38 @@
+.input-update {
+	background-color: #24303c;
+	border: none;
+	font-weight: 500;
+	font-family: inherit;
+	font-size: 18px;
+	color: #fff;
+	width: 100%;
+	outline: none;
+}
+
+.btn-update {
+	background-color: var(--azul);
+	color: #fff;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 50%;
+	transition: all 0.3s;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.btn-update:hover {
+	background-color: var(--azul-hover);
+}
+
+.text-decoration {
+	text-decoration: line-through;
+	color: var(--verde);
+}
+
+form {
+	display: flex;
+	gap: 20px;
+}

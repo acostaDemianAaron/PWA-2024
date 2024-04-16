@@ -1,0 +1,51 @@
+li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+li span {
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+li form {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-completed {
+	background-color: #24303c;
+	width: 24px;
+	height: 24px;
+	border-radius: 20px;
+	border: 2px solid var(--verde);
+	cursor: pointer;
+}
+
+.container-completed.active {
+	background-color: var(--verde);
+}
+
+.btn-delete {
+	background-color: var(--rojo);
+	color: #fff;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 50%;
+	transition: all 0.3s;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.btn-delete:hover {
+	background-color: var(--rojo-hover);
+}
