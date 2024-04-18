@@ -1,4 +1,11 @@
 # PWA-2024
+
+## Descripción de la aplicación
+
+  La aplicación desarrollada funciona como anotador de tareas por hacer. Por lo tanto, permite al usuario agregar nuevas tareas, marcar tareas como completadas y eliminarlas.
+
+  Habrá un contador que muestra el número total de tareas y de tareas completadas, así como también a medida que el usuario agregue tareas, éstas se mostrarán en una lista.
+
 ## Explicacion de archivos principales
  
 `Index.js`:
@@ -40,3 +47,32 @@
   - Legajo FAI - 3844
   - Mail Personal: guillermo.aguero@est.fi.uncoma.edu.ar
   - Usuario GitHub: guillermoagueronqn
+
+## Instrucciones para la instalación y uso de la aplicación
+
+ **1.** En caso de no tener instalado Node.js, se deberá hacerlo desde el siguiente link: https://nodejs.org/en/download , en el cual
+se debe elegir el sistema operativo y luego seguir el proceso de instalación.
+
+ **2.** Luego de haber instalado Node.js se deben escribir los comandos `node -v` y `npm -v` para saber si fue instalado correctamente. Lo que
+se muestra en consola son las versiones instaladas. En caso de que no se muestren las versiones, quiere decir que todavía no se han
+instalado correctamente.
+
+![Paso 2](https://i.postimg.cc/Wb6KvDMz/paso2.png)
+
+ **3.** Copiar la url del repositorio de GitHub.
+
+![Paso 3](https://i.postimg.cc/N0VC4RwJ/paso3.png)
+
+ **4.** Abrir en el editor de código usado la carpeta donde se querrá guardar el proyecto.
+
+![Paso 4](https://i.postimg.cc/Jzp2s9YW/paso4.png)
+
+ **5.** En la terminal, clonar el proyecto usando la url. Esto se realiza con el comando `git clone url`
+
+![Paso 5](https://i.postimg.cc/Qd8zxXbb/paso5.png)
+
+ **6.** Luego se deberá posicionar en la carpeta del proyecto clonado con el comando `cd PWA-2024` (en este caso ya que se llama así el proyecto). Una vez dentro de la carpeta, se ejecutará el comando `npm install`, el cual sirve para instalar todas las dependencias del proyecto.
+
+![Paso 6](https://i.postimg.cc/JhtdZPSH/paso6.png)
+
+ **7.** Por último, para iniciar el proyecto ejecutamos el comando `npm start`, con el cual se podrá empezar a utilizar el programa.
