@@ -8,6 +8,7 @@ export const TaskList = ({
     completeTask,
     deleteTask
 }) => {
+    /* Se retorna una lista recorriendo todas las tareas actuales con la función .map utilizando el componente TaskItem */
     return (
         <ul>
             {tasks.map(task => (

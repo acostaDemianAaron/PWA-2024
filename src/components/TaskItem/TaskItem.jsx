@@ -9,6 +9,8 @@ export const TaskItem = ({
     completeTask,
     deleteTask
 }) => {
+    /* Se retornan las tareas, que serán los elementos de una lista. Cada tarea tendrá la descripción, y botones para marcar la tarea
+    como terminada, para modificar la descripción y para eliminarla. */ 
     return (
         <li>
             <span onClick={() => completeTask(task.id)}>
