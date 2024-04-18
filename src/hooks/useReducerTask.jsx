@@ -1,4 +1,4 @@
-export const TaskReducer = (initialState, action) => {
+export const useReducerTask = (initialState, action) => {
 
 
     switch (action.type) {
@@ -29,6 +29,15 @@ export const TaskReducer = (initialState, action) => {
                 }
                 return task;
             });
+
+
+            case "Search":
+                return {
+                    ...initialState,
+                    searchResults: initialState.tasks.filter(task =>
+                        task.description.toLowerCase().includes(action.data.toLowerCase())
+                    )
+                };
 
 
         case "Delete":

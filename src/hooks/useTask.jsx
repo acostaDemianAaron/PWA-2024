@@ -1,16 +1,15 @@
-import { useEffect, useReducer } from 'react';
-import { TaskReducer } from '../TaskReducer'; 
+import { useEffect, useReducer, useMemo, useState } from 'react';
+import { useReducerTask } from './useReducerTask'; 
 
 export const useTask = () => {
-    const initialState = []; 
-
+    const initialState = [];
     const initial = () => {
         return JSON.parse(localStorage.getItem("tasks")) || [];
     };
 
 
     const [tasks, dispatch] = useReducer(
-        TaskReducer, 
+        useReducerTask, 
         initialState, 
         initial 
     );
@@ -18,7 +17,14 @@ export const useTask = () => {
 
     const tasksCount = tasks.length;
     const inProgressTaskCount = tasks.filter(task => !task.completed).length;
+    const [searchTerm, setSearchTerm] = useState("");
 
+    const filteredTasks = useMemo(() => {
+        if (!searchTerm) return tasks;
+        return tasks.filter(task =>
+            task.description.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+    }, [tasks, searchTerm]);
 
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -31,6 +37,7 @@ export const useTask = () => {
             data: task
         };
         dispatch(action);
+        setSearchTerm(""); // Limpiar el término de búsqueda al agregar una tarea
     };
 
     const updateTask = (id, description) => {
@@ -52,6 +59,10 @@ export const useTask = () => {
         dispatch(action);
     };
 
+    const setSearch = term => {
+        setSearchTerm(term);
+    };
+
     const deleteTask = id => {
         const action = {
             type: "Delete",
@@ -62,12 +73,13 @@ export const useTask = () => {
 
 
     return {
-        tasks,
+        tasks: filteredTasks,
         tasksCount,
         inProgressTaskCount,
         addTask,
         updateTask,
         completeTask,
+        setSearch,
         deleteTask
     };
 };

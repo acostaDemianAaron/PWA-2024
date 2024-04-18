@@ -1,11 +1,11 @@
 .react-logo {
-    text-align: center;
-    margin-bottom: 20px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .react-logo img {
-    width: 100px; 
-    height: auto;
+	width: 100px;
+	height: auto;
 }
 
 .card-task {
@@ -13,7 +13,7 @@
 	color: white;
 	padding: 50px;
 	border-radius: 30px;
-	width: 800px;
+	width: 1000px;
 }
 
 .count-task {
@@ -37,4 +37,24 @@
 	text-align: center;
 	margin-bottom: 40px;
 	font-size: 24px;
+}
+
+.task-empty {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.332);
+}
+
+.task-center {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+  }
+
+  .task-center h3 {
+	margin-left: 20px;
+  }
+
+
+.task-column {
+    flex: 1;
 }

@@ -1,1 +1,34 @@
-/*Search*/
+form {
+	display: flex;
+	gap: 20px;
+    width: 50%;
+}
+
+.input-search {
+	background-color: #4a647d;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	flex: 1;
+	font-family: inherit;
+	font-size: 17px;
+	color: #fff;
+	margin-left: 15px;
+}
+
+.btn-search {
+    width: 150px;
+	border: none;
+	background-color: var(--azul);
+	color: #fff;
+	padding: 5px 30px;
+	border-radius: 20px;
+	font-family: inherit;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+.btn-search:hover {
+	background-color: var(--azul-hover);
+}
