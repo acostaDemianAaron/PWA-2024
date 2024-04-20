@@ -13,11 +13,11 @@ export const TaskAdd = ({ addTask }) => {
     que la tarea esté completa o no */
     const onFormSubmit = e => {
         e.preventDefault();
-        if (description.length <= 1) return;
+        if (description.trim().length <= 1) return;
 
         let newTask = {
             id: new Date().getTime(),
-            description: description,
+            description: description.trim(),
             completed: false
         };
 
